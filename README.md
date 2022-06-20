@@ -8,7 +8,7 @@ lojas.
 ## Instalação
 
 Use [Composer](https://getcomposer.org) para instalar esta biblioteca:
-[`jn2/base`](https://bitbucket.org/jn2/jn2_base)
+[`jn2/base`](https://github.com/genesisoftware/base)
 
 Execute o seguinte comando no diretório do projeto para adicionar a dependência:
 
