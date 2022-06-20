@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Cms\Controller\Adminhtml\Block\Delete">
+        <plugin name="genesisoft_base_block_delete" type="Genesisoft\Base\Plugin\Block\Delete" sortOrder="0" disabled="false"/>
+    </type>
+
+    <type name="Magento\Cms\Controller\Adminhtml\Block\InlineEdit">
+        <plugin name="genesisoft_base_block_inlineedit" type="Genesisoft\Base\Plugin\Block\InlineEdit" sortOrder="0" disabled="false"/>
+    </type>
+
+    <type name="Magento\Cms\Model\Block\DataProvider">
+        <plugin name="genesisoft_base_block_edit" type="Genesisoft\Base\Plugin\Model\Block\DataProvider" sortOrder="0" disabled="false"/>
+    </type>
+
+    <type name="Magento\User\Controller\Adminhtml\Auth\ResetPassword">
+        <plugin name="genesisoft_base_resetpassword" type="Genesisoft\Base\Plugin\Adminhtml\Auth\ResetPassword" sortOrder="0" disabled="false"/>
+    </type>
+
+    <preference for="Magento\Checkout\Model\TotalsInformationManagement" type="Genesisoft\Base\Preference\Magento\Checkout\Model\TotalsInformationManagement" />
+
+    <type name="Magento\Framework\Escaper">
+        <plugin name="Genesisoft_Base_Plugin_Magento_Framework_Escaper"
+                type="Genesisoft\Base\Plugin\Magento\Framework\Escaper" sortOrder="10" disabled="false"/>
+    </type>
+</config>

@@ -1,0 +1,29 @@
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ */
+
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_category = $block->getCurrentCategory();
+$_imgHtml = '';
+$categoryImageLink = $_category->getData('category_image_link');
+if ($_imgUrl = $_category->getImageUrl()) {
+    if ($categoryImageLink) {
+        $_imgHtml = "<a href='{$categoryImageLink}'>";
+    }
+
+    $_imgHtml .= "<div class='category-image'>
+                    <img src='{$_imgUrl}' alt='{$block->escapeHtml($_category->getName())}' title='{$block->escapeHtml($_category->getName()) }' class='image' />
+                 </div>";
+
+    if ($categoryImageLink) {
+        $_imgHtml .= '</a>';
+    }
+
+    $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+    /* @escapeNotVerified */
+    echo $_imgHtml;
+}
+?>

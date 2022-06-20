@@ -1,0 +1,16 @@
+{
+    "name": "genesisoft/base",
+    "description": "Módulo com personalizações básicas",
+    "type": "magento2-module",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Genesisoft\\Base\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
