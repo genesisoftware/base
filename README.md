@@ -1,6 +1,6 @@
-# Módulo Jn2_Base
+# Módulo Genesisoft_Base
 
-Jn2_Base é um módulo magento 2 que contém funcionalidades e configurações que serão padrão para todas as 
+Genesisoft_Base é um módulo magento 2 que contém funcionalidades e configurações que serão padrão para todas as 
 lojas.
 
 - Repositório: https://bitbucket.org/jn2/jn2_base
@@ -13,21 +13,21 @@ Use [Composer](https://getcomposer.org) para instalar esta biblioteca:
 Execute o seguinte comando no diretório do projeto para adicionar a dependência:
 
 ```sh
-composer require jn2/base "^1.0"
+composer require genesisoft/base "^1.0"
 ```
 
 Como alternativa, adicione a dependência diretamente ao seu arquivo `composer.json`:
 
 ```json
 "require": {
-    "jn2/base": "^1.0"
+    "genesisoft/base": "^1.0"
 }
 ```
 
 #### Após a instalação, ative o módulo executando os seguintes comandos:
 
 ```sh
-$ php bin/magento module:enable Jn2_Base --clear-static-content
+$ php bin/magento module:enable Genesisoft_Base --clear-static-content
 $ php bin/magento setup:upgrade
 ```
 
